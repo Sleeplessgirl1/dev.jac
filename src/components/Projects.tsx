@@ -10,12 +10,13 @@ const projects = [
   {
     title: "Car Marketplace Web App",
     description:
-      "A modern car marketplace platform with dynamic listings, advanced filtering, and real-time data. Users can browse, search, and filter vehicles with a seamless and responsive experience.",
+      "A modern car marketplace platform with dynamic listings, advanced filtering, and real-time data. Built with conversion in mind—optimized user flows and trust-building elements to drive inquiries.",
     problem:
-      "The client needed a scalable platform to showcase vehicle inventory with intuitive search and filtering capabilities.",
+      "The client needed a scalable platform to showcase vehicle inventory with intuitive search, filtering, and a design that builds buyer confidence.",
     solution:
-      "Built a performant React application with dynamic routing, optimized data fetching, and a clean UI that adapts to any device.",
+      "Built a performant React application with dynamic routing, lazy-loaded images, and a clean UI. Achieved 95+ Lighthouse performance score and implemented conversion-focused CTAs throughout the user journey.",
     techStack: ["React", "Next.js", "TypeScript", "Tailwind CSS", "REST API"],
+    highlights: ["95+ Lighthouse Score", "Conversion-Optimized", "Mobile-First"],
     liveUrl: "#",
     githubUrl: "#",
     image: projectCarMarketplace,
@@ -23,12 +24,13 @@ const projects = [
   {
     title: "Clever Media Website",
     description:
-      "A professional informational website for a media company, featuring clean design, optimized performance, and SEO-friendly structure to maximize visibility.",
+      "A professional informational website for a media company, featuring clean design, optimized performance, and SEO-friendly structure. Visual branding aligned with client's identity guidelines.",
     problem:
-      "The client required a modern web presence that communicates their brand effectively and ranks well in search engines.",
+      "The client required a modern web presence that communicates their brand effectively, ranks well in search engines, and converts visitors into leads.",
     solution:
-      "Delivered a polished, fast-loading website with semantic HTML, structured data, and responsive design across all breakpoints.",
+      "Delivered a polished, fast-loading website with semantic HTML, structured data, and responsive design. Collaborated on content structure for optimal user flow and implemented trust-building sections.",
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+    highlights: ["SEO Optimized", "Brand-Aligned Design", "Fast Load Times"],
     liveUrl: "#",
     githubUrl: "#",
     image: projectCleverMedia,
@@ -103,6 +105,19 @@ const Projects = () => {
                       </span>
                     </div>
                   </div>
+
+                  {project.highlights && (
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {project.highlights.map((highlight) => (
+                        <span
+                          key={highlight}
+                          className="px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-md"
+                        >
+                          {highlight}
+                        </span>
+                      ))}
+                    </div>
+                  )}
 
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.techStack.map((tech) => (
