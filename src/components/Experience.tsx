@@ -9,13 +9,27 @@ const experiences = [
     company: "Self-Employed",
     period: "2023 - Present",
     description:
-      "Building production-ready web applications for clients, from initial consultation to deployment and maintenance.",
+      "End-to-end website development for small businesses and brands—from requirements gathering and UX/UI design to deployment and ongoing optimization.",
     responsibilities: [
-      "Direct client communication and requirements gathering",
-      "End-to-end development of React/Next.js applications",
-      "Database design and API integration",
-      "Deployment, optimization, and ongoing maintenance",
-      "SEO implementation and performance tuning",
+      "Delivered complete websites for clients including Dos Aguas (brand-focused) and Nativa Cocinas (product-focused business site)",
+      "Owned the full project lifecycle: discovery, design, development, deployment, and maintenance",
+      "Collaborated directly with non-technical clients to translate business needs into functional, conversion-oriented solutions",
+      "Implemented performance optimizations achieving 90+ Lighthouse scores across performance, accessibility, and SEO",
+      "Contributed to digital marketing strategies—structuring content for clarity, user flow, and conversion",
+      "Set up e-commerce platforms including Shopify with payment integrations (Shopify Payments, PayPal)",
+    ],
+  },
+  {
+    title: "Marketing & Creative Contributor",
+    company: "Freelance",
+    period: "2022 - Present",
+    description:
+      "Supporting clients with visual identity, content creation, and basic digital marketing to complement development work.",
+    responsibilities: [
+      "Product photography and visual content for e-commerce and brand websites",
+      "Meta Ads setup and campaign structure for small business visibility",
+      "Conversion-focused design decisions based on user behavior and business goals",
+      "Brand consistency across web presence, imagery, and marketing materials",
     ],
   },
 ];

@@ -16,20 +16,21 @@ const skillCategories = [
     ],
   },
   {
-    title: "Backend",
-    skills: ["Node.js", "REST APIs", "MySQL", "PostgreSQL", "Supabase"],
+    title: "Backend & Data",
+    skills: ["Node.js", "REST APIs", "SQL", "MySQL", "PostgreSQL", "Supabase"],
   },
   {
-    title: "Tools & Workflow",
-    skills: ["Git", "GitHub", "Vercel", "Figma", "VS Code"],
+    title: "Tools & Platforms",
+    skills: ["Git", "GitHub", "Vercel", "Shopify", "Figma", "VS Code"],
   },
   {
-    title: "Other Skills",
+    title: "Performance & Quality",
     skills: [
-      "Responsive Design",
+      "Google Lighthouse",
+      "Core Web Vitals",
       "SEO Optimization",
-      "Performance Tuning",
       "Accessibility",
+      "Responsive Design",
     ],
   },
 ];
