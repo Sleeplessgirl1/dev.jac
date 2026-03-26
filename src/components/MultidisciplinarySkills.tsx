@@ -45,7 +45,7 @@ const beyondCodeSkills = [
     icon: Gamepad2,
     title: "Interactive & 3D",
     description: "Exploring interactive experiences and 3D environments for unique digital products.",
-    skills: ["Unity Basics", "Interactive UI", "Animation"],
+    skills: ["Unity Basics", "Interactive UI", "Animation", "Meta"],
   },
 ];
 
