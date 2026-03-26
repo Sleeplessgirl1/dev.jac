@@ -30,7 +30,7 @@ const Hero = () => {
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6"
           >
             Hi, I'm a{" "}
-            <span className="text-gradient">Full-Stack Developer</span>
+            <span className="text-gradient">JACQUELINE RGZZ</span>
             <br />
             building modern web experiences
           </motion.h1>
@@ -41,9 +41,8 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8"
           >
-            Based in Chihuahua, Mexico. I craft clean, functional, and user-centered 
-            digital products with React, Next.js, and TypeScript. Focused on turning 
-            ideas into production-ready solutions.
+            I craft clean, functional, and user-centered digital products with 
+            technologies. Focused on turning ideas into production-ready solutions.
           </motion.p>
 
           <motion.div
