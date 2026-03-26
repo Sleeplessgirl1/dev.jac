@@ -11,20 +11,20 @@ const contactLinks = [
   {
     icon: Mail,
     label: "Email",
-    value: "hello@developer.com",
-    href: "mailto:hello@developer.com",
+    value: "rodriguezjacqueline264@gmail.com",
+    href: "mailto:rodriguezjacqueline264@gmail.com",
   },
   {
     icon: Github,
     label: "GitHub",
-    value: "github.com/username",
-    href: "https://github.com",
+    value: "https://github.com/Sleeplessgirl1",
+    href: "https://github.com/Sleeplessgirl1",
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
-    value: "linkedin.com/in/username",
-    href: "https://linkedin.com",
+    value: "https://www.linkedin.com/in/jacqueline-rodr%C3%ADguez-dev-jac/",
+    href: "https://www.linkedin.com/in/jacqueline-rodr%C3%ADguez-dev-jac/",
   },
 ];
 
