@@ -45,20 +45,23 @@ const About = () => {
           </h2>
           <div className="space-y-4 text-muted-foreground">
             <p>
-              I'm a junior full-stack developer with hands-on experience building 
-              production websites for real clients. Based in Chihuahua, Mexico, 
-              I specialize in creating clean, performant, and accessible web 
-              applications.
+              I'm a full-stack developer with hands-on experience building 
+              real-world websites for clients. Based in Chihuahua, Mexico, 
+              I specialize in developing modern, performant, and user-friendly 
+              web applications.
             </p>
             <p>
-              My approach combines technical skill with design sensitivity—I believe 
-              great software should not only work flawlessly but also feel intuitive 
-              and delightful to use. I'm a fast learner, detail-oriented, and genuinely 
-              curious about solving complex problems.
+              My approach combines technical development with product thinking. 
+              I focus not only on writing clean code but also on creating digital 
+              experiences that are intuitive, accessible, and aligned with business goals.
             </p>
             <p>
-              Whether it's an e-commerce platform, a marketing site, or an interactive 
-              web app, I bring the same level of care and craftsmanship to every project.
+              I'm naturally curious, detail-oriented, and always eager to improve 
+              my skills while solving meaningful problems.
+            </p>
+            <p>
+              Currently, I'm looking for opportunities where I can contribute to 
+              impactful projects while continuing to grow as a developer.
             </p>
           </div>
         </motion.div>
