@@ -22,15 +22,15 @@ const projects = [
     image: projectCarMarketplace,
   },
   {
-    title: "Clever Media Website",
+    title: "Nativa Cocinas y Vestidores",
     description:
-      "A professional informational website for a media company, featuring clean design, optimized performance, and SEO-friendly structure. Visual branding aligned with client's identity guidelines.",
+      "A custom website for a premium carpentry business specializing in personalized kitchens and closets. Designed to showcase craftsmanship, build trust, and drive customer inquiries across multiple cities in Mexico.",
     problem:
-      "The client required a modern web presence that communicates their brand effectively, ranks well in search engines, and converts visitors into leads.",
+      "The client needed a digital presence that reflects the premium quality of their handcrafted products, highlights their fast delivery and 100% customization, and reaches customers across Chihuahua, Juárez, Parral, and Cuauhtémoc.",
     solution:
-      "Delivered a polished, fast-loading website with semantic HTML, structured data, and responsive design. Collaborated on content structure for optimal user flow and implemented trust-building sections.",
+      "Built a visually rich, conversion-oriented website emphasizing craftsmanship and personalization. Implemented trust-building elements like delivery timelines, customization guarantees, and regional coverage to drive inquiries.",
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
-    highlights: ["SEO Optimized", "Brand-Aligned Design", "Fast Load Times"],
+    highlights: ["Conversion-Focused", "100% Custom Design", "Multi-City Reach"],
     liveUrl: "#",
     githubUrl: "#",
     image: projectCleverMedia,
