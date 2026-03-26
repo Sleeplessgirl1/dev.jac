@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import projectCarMarketplace from "@/assets/project-car-marketplace.jpg";
-import projectCleverMedia from "@/assets/project-clever-media.jpg";
+import projectNativa from "@/assets/project-nativa.jpg";
 
 const projects = [
   {
@@ -33,7 +33,7 @@ const projects = [
     highlights: ["Conversion-Focused", "100% Custom Design", "Multi-City Reach"],
     liveUrl: "#",
     githubUrl: "#",
-    image: projectCleverMedia,
+    image: projectNativa,
   },
 ];
 
