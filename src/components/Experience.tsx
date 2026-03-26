@@ -20,16 +20,15 @@ const experiences = [
     ],
   },
   {
-    title: "Marketing & Creative Contributor",
-    company: "Freelance",
-    period: "2022 - Present",
+    title: "B.S. in Information Technologies Engineering (In Progress)",
+    company: "Universidad Tecnológica de Chihuahua",
+    period: "2023 - Present",
     description:
-      "Supporting clients with visual identity, content creation, and basic digital marketing to complement development work.",
+      "My academic background in Information Technologies Engineering has provided a strong foundation in software development, databases, and modern web technologies.",
     responsibilities: [
-      "Product photography and visual content for e-commerce and brand websites",
-      "Meta Ads setup and campaign structure for small business visibility",
-      "Conversion-focused design decisions based on user behavior and business goals",
-      "Brand consistency across web presence, imagery, and marketing materials",
+      "Relevant projects: MetaQuest 2 VR game (Leyenda Salvos), RV app for planet and lunar visualization",
+      "Coursework: Database Systems, Web Development, Data Structures & Algorithms, AI Fundamentals",
+      "Focused on applying theoretical knowledge to real-world development through freelance work and personal projects",
     ],
   },
 ];
