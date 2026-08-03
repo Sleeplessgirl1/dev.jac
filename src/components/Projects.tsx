@@ -3,9 +3,9 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import projectDekra from "@/assets/project-dekra.jpg";
-import projectEliteZone from "@/assets/project-elitezone.jpg";
-import projectExperiencia from "@/assets/project-experiencia013.jpg";
+import projectDekra from "@/assets/dekra-lite.png.asset.json";
+import projectEliteZone from "@/assets/elite-zone.png.asset.json";
+import projectExperiencia from "@/assets/experiencia013.png.asset.json";
 
 const projects = [
   {
@@ -89,7 +89,7 @@ const Projects = () => {
               <div className="grid lg:grid-cols-2">
                 <div className="aspect-video lg:aspect-auto overflow-hidden">
                   <img
-                    src={project.image}
+                    src={project.image.url}
                     alt={`${project.title} preview`}
                     className="w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] hover:scale-105"
                     loading="lazy"
