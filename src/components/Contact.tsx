@@ -52,12 +52,12 @@ const Contact = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
           <span className="text-primary font-medium text-sm uppercase tracking-wider">
             Contact
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2 mb-4">
+          <h2 className="text-2xl sm:text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mt-2 mb-4">
             Let's work together
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
@@ -66,14 +66,14 @@ const Contact = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <div className="flex items-center gap-2 text-muted-foreground mb-6">
-              <MapPin size={18} />
+            <div className="flex items-start gap-2 text-muted-foreground mb-6 text-sm sm:text-base">
+              <MapPin size={18} className="flex-shrink-0 mt-0.5" />
               <span>Chihuahua, Mexico · Available for remote work</span>
             </div>
 
@@ -88,19 +88,19 @@ const Contact = () => {
                       ? "noopener noreferrer"
                       : undefined
                   }
-                  className="flex items-center gap-4 p-4 bg-card rounded-xl border border-border hover:border-primary/50 hover:shadow-card transition-all group"
+                  className="flex items-center gap-3 sm:gap-4 p-4 bg-card rounded-xl border border-border hover:border-primary/50 hover:shadow-card transition-all group min-w-0"
                 >
-                  <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center group-hover:bg-primary/10 transition-colors">
+                  <div className="w-10 h-10 flex-shrink-0 bg-accent rounded-lg flex items-center justify-center group-hover:bg-primary/10 transition-colors">
                     <link.icon
                       size={20}
                       className="text-primary"
                     />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <div className="text-sm text-muted-foreground">
                       {link.label}
                     </div>
-                    <div className="font-medium text-foreground">
+                    <div className="font-medium text-foreground text-sm sm:text-base break-all">
                       {link.value}
                     </div>
                   </div>
@@ -114,7 +114,7 @@ const Contact = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="bg-card rounded-2xl p-6 lg:p-8 border border-border shadow-card"
+            className="bg-card rounded-2xl p-4 sm:p-6 lg:p-8 border border-border shadow-card"
           >
             <h3 className="text-lg font-semibold text-foreground mb-6">
               Send a message

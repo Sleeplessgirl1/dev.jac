@@ -35,12 +35,12 @@ const About = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="max-w-2xl mb-16"
+          className="max-w-2xl mb-10 md:mb-16"
         >
           <span className="text-primary font-medium text-sm uppercase tracking-wider">
             About Me
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2 mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mt-2 mb-6">
             A developer who cares about the details
           </h2>
           <div className="space-y-4 text-muted-foreground">

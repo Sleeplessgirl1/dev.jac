@@ -60,12 +60,12 @@ const Projects = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
           <span className="text-primary font-medium text-sm uppercase tracking-wider">
             Projects
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2 mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mt-2 mb-4">
             Featured work
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
@@ -74,14 +74,14 @@ const Projects = () => {
           </p>
         </motion.div>
 
-        <div className="space-y-12">
+        <div className="space-y-8 md:space-y-12">
           {projects.map((project, index) => (
             <motion.article
               key={project.title}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.1 + index * 0.15 }}
-              className="bg-card rounded-3xl overflow-hidden border-2 border-foreground shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
+              className="bg-card rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-foreground shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
             >
               <div className="grid lg:grid-cols-2">
                 <div className="aspect-video lg:aspect-auto overflow-hidden">
@@ -94,11 +94,11 @@ const Projects = () => {
                     height={800}
                   />
                 </div>
-                <div className="p-6 lg:p-8 flex flex-col">
-                  <h3 className="text-xl font-bold text-foreground mb-3">
+                <div className="p-5 sm:p-6 lg:p-8 flex flex-col">
+                  <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">
                     {project.title}
                   </h3>
-                  <p className="text-muted-foreground mb-4">
+                  <p className="text-sm sm:text-base text-muted-foreground mb-4">
                     {project.description}
                   </p>
 
@@ -146,7 +146,7 @@ const Projects = () => {
                   </div>
 
                   <div className="flex gap-3 mt-auto">
-                    <Button asChild size="sm">
+                    <Button asChild size="sm" className="w-full sm:w-auto">
                       <a
                         href={project.liveUrl}
                         target="_blank"

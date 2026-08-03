@@ -4,21 +4,21 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-[100svh] flex items-center justify-center relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-b from-transparent to-primary/70" />
         <div className="absolute top-1/4 right-1/6 w-80 h-80 bg-primary/40 rounded-full blur-3xl" />
       </div>
 
-      <div className="container-narrow mx-auto px-6 pt-20">
+      <div className="container-narrow mx-auto px-4 sm:px-6 pt-28 pb-24 sm:pt-20">
         <div className="max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="inline-block px-4 py-2 border-2 border-foreground bg-primary text-foreground text-xs font-semibold uppercase tracking-widest rounded-full mb-6">
+            <span className="inline-block px-3 sm:px-4 py-2 border-2 border-foreground bg-primary text-foreground text-xs font-semibold uppercase tracking-widest rounded-full mb-6">
               Available for opportunities
             </span>
           </motion.div>
@@ -27,7 +27,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="font-display text-5xl md:text-7xl lg:text-8xl font-extrabold text-foreground leading-[0.9] mb-6 uppercase"
+            className="font-display text-[2.5rem] sm:text-5xl md:text-7xl lg:text-8xl font-extrabold text-foreground leading-[0.9] mb-6 uppercase"
           >
             <span className="text-gradient">Jacqueline Rgzz</span>
             <br />
@@ -38,7 +38,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-8"
+            className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mb-8"
           >
             I craft clean, functional, and user-centered digital products with 
             technologies. Focused on turning ideas into production-ready solutions.
@@ -48,12 +48,12 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="flex flex-wrap gap-4 mb-12"
+            className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 mb-10 sm:mb-12"
           >
-            <Button asChild size="lg">
+            <Button asChild size="lg" className="w-full sm:w-auto">
               <a href="#projects">View Projects</a>
             </Button>
-            <Button asChild variant="outline" size="lg">
+            <Button asChild variant="outline" size="lg" className="w-full sm:w-auto">
               <a href="#contact">Contact Me</a>
             </Button>
           </motion.div>
@@ -96,7 +96,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.8 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+          className="hidden sm:block absolute bottom-8 left-1/2 -translate-x-1/2"
         >
           <a
             href="#about"

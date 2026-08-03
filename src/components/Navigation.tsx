@@ -35,8 +35,8 @@ const Navigation = () => {
   }} transition={{
     duration: 0.5
   }} className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/80 backdrop-blur-lg border-b border-border" : "bg-transparent"}`}>
-      <nav className="container-narrow mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="font-display text-2xl font-extrabold tracking-tight text-foreground transition-transform duration-300 hover:-translate-y-0.5">
+      <nav className="container-narrow mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+        <a href="#" className="font-display text-xl sm:text-2xl font-extrabold tracking-tight text-foreground transition-transform duration-300 hover:-translate-y-0.5">
           dev.jac<span className="text-primary">.</span>
         </a>
 
@@ -51,7 +51,7 @@ const Navigation = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="md:hidden p-2 text-foreground" aria-label="Toggle menu">
+        <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="md:hidden p-2 -mr-2 text-foreground" aria-label="Toggle menu">
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </nav>
@@ -67,7 +67,7 @@ const Navigation = () => {
       opacity: 0,
       y: -20
     }} className="md:hidden bg-background border-b border-border">
-          <div className="container-narrow mx-auto px-6 py-4 flex flex-col gap-4">
+          <div className="container-narrow mx-auto px-4 sm:px-6 py-4 flex flex-col gap-4">
             {navLinks.map(link => <a key={link.href} href={link.href} onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2">
                 {link.label}
               </a>)}

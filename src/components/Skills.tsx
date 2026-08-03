@@ -46,12 +46,12 @@ const Skills = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
           <span className="text-primary font-medium text-sm uppercase tracking-wider">
             Skills
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mt-2">
             Technologies I work with
           </h2>
         </motion.div>
