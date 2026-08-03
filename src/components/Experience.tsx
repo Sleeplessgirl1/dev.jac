@@ -33,11 +33,11 @@ const experiences = [
     ],
   },
   {
-    title: "B.S. in Information Technologies Engineering (In Progress)",
+    title: "B.S. in Information Technologies Engineering",
     company: "Universidad Tecnológica de Chihuahua",
-    period: "2023 - Present",
+    period: "2023 - 2026",
     description:
-      "My academic background in Information Technologies Engineering has provided a strong foundation in software development, databases, and modern web technologies.",
+      "Completed my degree in Information Technologies Engineering, gaining a strong foundation in software development, databases, and modern web technologies.",
     responsibilities: [
       "Relevant projects: MetaQuest 2 VR game (Leyenda Salvos), RV app for planet and lunar visualization",
       "Coursework: Database Systems, Web Development, Data Structures & Algorithms, AI Fundamentals",
