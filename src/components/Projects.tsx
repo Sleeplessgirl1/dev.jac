@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import projectDekra from "@/assets/dekra-lite.png.asset.json";
 import projectEliteZone from "@/assets/elite-zone.png.asset.json";
