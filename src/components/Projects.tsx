@@ -3,37 +3,52 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import projectCarMarketplace from "@/assets/project-car-marketplace.jpg";
-import projectNativa from "@/assets/project-nativa.jpg";
+import projectDekra from "@/assets/project-dekra.jpg";
+import projectEliteZone from "@/assets/project-elitezone.jpg";
+import projectExperiencia from "@/assets/project-experiencia013.jpg";
 
 const projects = [
   {
-    title: "Car Marketplace Web App",
+    title: "Dekra-Lite — Shopify Specialist",
     description:
-      "A modern car marketplace platform with dynamic listings, advanced filtering, and real-time data. Built with conversion in mind—optimized user flows and trust-building elements to drive inquiries.",
+      "Ongoing Shopify work for Dekra-Lite: continuous store maintenance, new page creation, inventory updates and catalog management for a large seasonal decor brand.",
     problem:
-      "The client needed a scalable platform to showcase vehicle inventory with intuitive search, filtering, and a design that builds buyer confidence.",
+      "A large product catalog with seasonal cycles required constant updates, new landing pages and reliable inventory accuracy without breaking the live store.",
     solution:
-      "Built a performant React application with dynamic routing, lazy-loaded images, and a clean UI. Achieved 95+ Lighthouse performance score and implemented conversion-focused CTAs throughout the user journey.",
-    techStack: ["React", "Next.js", "TypeScript", "Tailwind CSS", "REST API"],
-    highlights: ["95+ Lighthouse Score", "Conversion-Optimized", "Mobile-First"],
+      "I handle day-to-day Shopify operations: building and editing pages, updating theme sections, syncing and correcting inventory, and keeping the storefront fast, consistent and on-brand.",
+    techStack: ["Shopify", "Liquid", "Theme Customization", "SEO", "Inventory Mgmt"],
+    highlights: ["Ongoing Maintenance", "Page Building", "Inventory Updates"],
     liveUrl: "#",
     githubUrl: "#",
-    image: projectCarMarketplace,
+    image: projectDekra,
   },
   {
-    title: "Nativa Cocinas y Vestidores",
+    title: "Elite Zone Chihuahua",
     description:
-      "A custom website for a premium carpentry business specializing in personalized kitchens and closets. Designed to showcase craftsmanship, build trust, and drive customer inquiries across multiple cities in Mexico.",
+      "Website for a kids party services company in Chihuahua — inflatables, games and party packages — with a contact/booking form that turns visitors into real inquiries.",
     problem:
-      "The client needed a digital presence that reflects the premium quality of their handcrafted products, highlights their fast delivery and 100% customization, and reaches customers across Chihuahua, Juárez, Parral, and Cuauhtémoc.",
+      "The business relied only on social media DMs, making it hard for parents to see packages, availability and pricing, or to request a quote quickly.",
     solution:
-      "Built a visually rich, conversion-oriented website emphasizing craftsmanship and personalization. Implemented trust-building elements like delivery timelines, customization guarantees, and regional coverage to drive inquiries.",
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
-    highlights: ["Conversion-Focused", "100% Custom Design", "Multi-City Reach"],
-    liveUrl: "#",
+      "Built a colorful, mobile-first React site with clear service sections, package presentation and a quote form that sends structured requests straight to the owner.",
+    techStack: ["React", "TypeScript", "Tailwind CSS", "Forms"],
+    highlights: ["Booking Form", "Mobile-First", "Local SEO"],
+    liveUrl: "https://elitezonecuu.lovable.app/",
     githubUrl: "#",
-    image: projectNativa,
+    image: projectEliteZone,
+  },
+  {
+    title: "Experiencia013",
+    description:
+      "Digital catalog for an event furniture rental company in Chihuahua: browsable inventory of furniture and decor for social events, organized by category and style.",
+    problem:
+      "Clients had no easy way to browse the rental inventory — everything lived in PDFs and photo albums, slowing down quotes and event planning.",
+    solution:
+      "Designed a clean digital catalog with categorized listings, high-quality imagery and direct contact CTAs so clients can explore the inventory and request a quote in seconds.",
+    techStack: ["React", "TypeScript", "Tailwind CSS", "Responsive Design"],
+    highlights: ["Digital Catalog", "Category Browsing", "Quote-Driven"],
+    liveUrl: "https://experiencia013.com",
+    githubUrl: "#",
+    image: projectExperiencia,
   },
 ];
 
@@ -69,14 +84,17 @@ const Projects = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.1 + index * 0.15 }}
-              className="bg-card rounded-2xl overflow-hidden border border-border shadow-card hover:shadow-card-hover transition-shadow"
+              className="bg-card rounded-3xl overflow-hidden border-2 border-foreground shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]"
             >
               <div className="grid lg:grid-cols-2">
                 <div className="aspect-video lg:aspect-auto overflow-hidden">
                   <img
                     src={project.image}
                     alt={`${project.title} preview`}
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] hover:scale-105"
+                    loading="lazy"
+                    width={1200}
+                    height={800}
                   />
                 </div>
                 <div className="p-6 lg:p-8 flex flex-col">
@@ -111,7 +129,7 @@ const Projects = () => {
                       {project.highlights.map((highlight) => (
                         <span
                           key={highlight}
-                          className="px-2.5 py-1 bg-primary/10 text-primary text-xs font-semibold rounded-md"
+                          className="px-3 py-1 bg-primary text-primary-foreground text-xs font-semibold rounded-full border border-foreground"
                         >
                           {highlight}
                         </span>
@@ -123,7 +141,7 @@ const Projects = () => {
                     {project.techStack.map((tech) => (
                       <span
                         key={tech}
-                        className="px-2.5 py-1 bg-accent text-accent-foreground text-xs font-medium rounded-md"
+                        className="px-3 py-1 border border-foreground/20 text-foreground/70 text-xs font-medium rounded-full transition-colors hover:bg-foreground hover:text-background"
                       >
                         {tech}
                       </span>

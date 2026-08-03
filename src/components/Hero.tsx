@@ -7,8 +7,8 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-b from-transparent to-primary/70" />
+        <div className="absolute top-1/4 right-1/6 w-80 h-80 bg-primary/40 rounded-full blur-3xl" />
       </div>
 
       <div className="container-narrow mx-auto px-6 pt-20">
@@ -18,7 +18,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <span className="inline-block px-4 py-2 bg-accent text-accent-foreground text-sm font-medium rounded-full mb-6">
+            <span className="inline-block px-4 py-2 border-2 border-foreground bg-primary text-foreground text-xs font-semibold uppercase tracking-widest rounded-full mb-6">
               Available for opportunities
             </span>
           </motion.div>
@@ -27,12 +27,11 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6"
+            className="font-display text-5xl md:text-7xl lg:text-8xl font-extrabold text-foreground leading-[0.9] mb-6 uppercase"
           >
-            Hi, I'm a{" "}
-            <span className="text-gradient">JACQUELINE RGZZ</span>
+            <span className="text-gradient">Jacqueline Rgzz</span>
             <br />
-            building modern web experiences
+            Web developer &amp; Shopify specialist
           </motion.h1>
 
           <motion.p
@@ -69,7 +68,7 @@ const Hero = () => {
               href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors"
+              className="text-foreground/70 hover:text-foreground transition-all duration-300 hover:-translate-y-1"
               aria-label="GitHub"
             >
               <Github size={22} />
@@ -78,14 +77,14 @@ const Hero = () => {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors"
+              className="text-foreground/70 hover:text-foreground transition-all duration-300 hover:-translate-y-1"
               aria-label="LinkedIn"
             >
               <Linkedin size={22} />
             </a>
             <a
               href="mailto:hello@developer.com"
-              className="text-muted-foreground hover:text-foreground transition-colors"
+              className="text-foreground/70 hover:text-foreground transition-all duration-300 hover:-translate-y-1"
               aria-label="Email"
             >
               <Mail size={22} />

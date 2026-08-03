@@ -5,6 +5,19 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
+    title: "Shopify Specialist — Dekra-Lite",
+    company: "Dekra-Lite",
+    period: "2024 - Present",
+    description:
+      "Ongoing Shopify support for a seasonal decor brand: store maintenance, page creation and inventory management.",
+    responsibilities: [
+      "Continuous maintenance of the Shopify storefront, theme sections and site structure",
+      "Creation and optimization of new landing and collection pages",
+      "Inventory updates, product data cleanup and catalog organization",
+      "Performance, SEO and on-brand consistency checks across the store",
+    ],
+  },
+  {
     title: "Freelance Full-Stack Web Developer",
     company: "Self-Employed",
     period: "2023 - Present",
