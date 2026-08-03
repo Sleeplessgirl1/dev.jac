@@ -2,49 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "@fontsource/inter/400.css";
-@import "@fontsource/inter/500.css";
-@import "@fontsource/inter/600.css";
-@import "@fontsource/inter/700.css";
-@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/archivo/700.css";
+@import "@fontsource/archivo/800.css";
+@import "@fontsource/archivo/900.css";
+@import "@fontsource/space-grotesk/400.css";
+@import "@fontsource/space-grotesk/500.css";
+@import "@fontsource/space-grotesk/700.css";
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 220 20% 10%;
+    --background: 45 25% 96%;
+    --foreground: 0 0% 7%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 20% 10%;
+    --card-foreground: 0 0% 7%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 10%;
+    --popover-foreground: 0 0% 7%;
 
-    --primary: 217 91% 50%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 52 100% 60%;
+    --primary-foreground: 0 0% 7%;
 
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 220 20% 20%;
+    --secondary: 45 20% 92%;
+    --secondary-foreground: 0 0% 7%;
 
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 45 15% 90%;
+    --muted-foreground: 0 0% 38%;
 
-    --accent: 217 91% 96%;
-    --accent-foreground: 217 91% 40%;
+    --accent: 52 100% 88%;
+    --accent-foreground: 0 0% 7%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 217 91% 50%;
+    --border: 40 12% 85%;
+    --input: 40 12% 85%;
+    --ring: 52 100% 55%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
-    /* Custom portfolio tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(217 91% 50%) 0%, hsl(230 80% 60%) 100%);
-    --card-shadow: 0 4px 6px -1px hsl(220 20% 10% / 0.05), 0 2px 4px -2px hsl(220 20% 10% / 0.05);
-    --card-shadow-hover: 0 20px 25px -5px hsl(220 20% 10% / 0.1), 0 8px 10px -6px hsl(220 20% 10% / 0.1);
-    --text-gradient: linear-gradient(135deg, hsl(217 91% 50%) 0%, hsl(240 80% 60%) 100%);
+    --hero-gradient: linear-gradient(180deg, hsl(45 25% 96%) 0%, hsl(52 100% 72%) 100%);
+    --card-shadow: 0 2px 0 0 hsl(0 0% 7% / 0.9);
+    --card-shadow-hover: 0 10px 0 0 hsl(0 0% 7% / 0.9);
+    --text-gradient: linear-gradient(120deg, hsl(0 0% 7%) 0%, hsl(0 0% 7%) 100%);
+    --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -107,20 +108,41 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Space Grotesk', system-ui, sans-serif;
   }
 
-  .font-mono {
-    font-family: 'JetBrains Mono', monospace;
+  h1, h2, h3, .font-display {
+    font-family: 'Archivo', system-ui, sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
   }
 }
 
 @layer utilities {
   .text-gradient {
-    background: var(--text-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    background-image: linear-gradient(180deg, transparent 62%, hsl(var(--primary)) 62%);
+    padding: 0 0.1em;
+  }
+
+  .link-underline {
+    position: relative;
+  }
+  .link-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 100%;
+    background: hsl(var(--foreground));
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s var(--transition-smooth);
+  }
+  .link-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
   }
 
   .section-padding {
