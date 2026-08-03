@@ -66,7 +66,7 @@ const CaseStudy = () => {
           <span className="text-primary font-medium text-sm uppercase tracking-wider">
             Featured Case Study
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mt-2">
             Clever Media MKT Website
           </h2>
         </motion.div>
