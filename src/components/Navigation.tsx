@@ -36,13 +36,13 @@ const Navigation = () => {
     duration: 0.5
   }} className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-background/80 backdrop-blur-lg border-b border-border" : "bg-transparent"}`}>
       <nav className="container-narrow mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="text-xl font-semibold text-foreground hover:text-primary transition-colors">
+        <a href="#" className="font-display text-2xl font-extrabold tracking-tight text-foreground transition-transform duration-300 hover:-translate-y-0.5">
           dev.jac<span className="text-primary">.</span>
         </a>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
-          {navLinks.map(link => <a key={link.href} href={link.href} className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
+          {navLinks.map(link => <a key={link.href} href={link.href} className="link-underline text-xs font-medium uppercase tracking-widest text-foreground/70 hover:text-foreground transition-colors duration-300">
               {link.label}
             </a>)}
           <Button asChild size="sm">
