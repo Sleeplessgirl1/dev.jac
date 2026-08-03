@@ -76,7 +76,7 @@ const CaseStudy = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="rounded-2xl overflow-hidden border border-border mb-12"
+          className="rounded-2xl overflow-hidden border border-border mb-8 md:mb-12"
         >
           <img
             src={projectCleverMedia}
@@ -92,7 +92,7 @@ const CaseStudy = () => {
           transition={{ duration: 0.5, delay: 0.15 }}
           className="mb-12"
         >
-          <h3 className="text-xl font-semibold text-foreground mb-4">Overview</h3>
+          <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-4">Overview</h3>
           <div className="space-y-3 text-muted-foreground">
             <p>
               Clever Media MKT needed a modern website to establish a strong digital
@@ -113,7 +113,7 @@ const CaseStudy = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mb-12"
         >
-          <h3 className="text-xl font-semibold text-foreground mb-4">
+          <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
             The Challenge
           </h3>
           <p className="text-muted-foreground mb-4">
@@ -143,13 +143,13 @@ const CaseStudy = () => {
           transition={{ duration: 0.5, delay: 0.25 }}
           className="mb-12"
         >
-          <h3 className="text-xl font-semibold text-foreground mb-6">
+          <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-6">
             My Approach
           </h3>
           <p className="text-muted-foreground mb-6">
             To solve this, I focused on three key areas:
           </p>
-          <div className="grid sm:grid-cols-3 gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {approaches.map((item) => (
               <div
                 key={item.title}
@@ -171,10 +171,10 @@ const CaseStudy = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="grid md:grid-cols-2 gap-8 mb-12"
+          className="grid md:grid-cols-2 gap-8 mb-10 md:mb-12"
         >
           <div>
-            <h3 className="text-xl font-semibold text-foreground mb-4">
+            <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
               Tech Stack
             </h3>
             <div className="flex flex-wrap gap-2">
@@ -189,7 +189,7 @@ const CaseStudy = () => {
             </div>
           </div>
           <div>
-            <h3 className="text-xl font-semibold text-foreground mb-4">
+            <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
               Key Features
             </h3>
             <ul className="space-y-2">
@@ -213,7 +213,7 @@ const CaseStudy = () => {
           transition={{ duration: 0.5, delay: 0.35 }}
           className="mb-12"
         >
-          <h3 className="text-xl font-semibold text-foreground mb-4">Results</h3>
+          <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-4">Results</h3>
           <div className="grid sm:grid-cols-2 gap-3">
             {results.map((r) => (
               <div
@@ -233,7 +233,7 @@ const CaseStudy = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <h3 className="text-xl font-semibold text-foreground mb-4">
+          <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-4">
             What I Learned
           </h3>
           <div className="bg-card rounded-xl p-6 border border-border space-y-3 text-muted-foreground">
