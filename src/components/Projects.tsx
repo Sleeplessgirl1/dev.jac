@@ -18,8 +18,7 @@ const projects = [
       "I handle day-to-day Shopify operations: building and editing pages, updating theme sections, syncing and correcting inventory, and keeping the storefront fast, consistent and on-brand.",
     techStack: ["Shopify", "Liquid", "Theme Customization", "SEO", "Inventory Mgmt"],
     highlights: ["Ongoing Maintenance", "Page Building", "Inventory Updates"],
-    liveUrl: "#",
-    githubUrl: "#",
+    liveUrl: "https://www.dekra-lite.com/",
     image: projectDekra,
   },
   {
@@ -33,7 +32,6 @@ const projects = [
     techStack: ["React", "TypeScript", "Tailwind CSS", "Forms"],
     highlights: ["Booking Form", "Mobile-First", "Local SEO"],
     liveUrl: "https://elitezonecuu.lovable.app/",
-    githubUrl: "#",
     image: projectEliteZone,
   },
   {
@@ -46,8 +44,7 @@ const projects = [
       "Designed a clean digital catalog with categorized listings, high-quality imagery and direct contact CTAs so clients can explore the inventory and request a quote in seconds.",
     techStack: ["React", "TypeScript", "Tailwind CSS", "Responsive Design"],
     highlights: ["Digital Catalog", "Category Browsing", "Quote-Driven"],
-    liveUrl: "https://experiencia013.com",
-    githubUrl: "#",
+    liveUrl: "https://www.experiencia013.com/",
     image: projectExperiencia,
   },
 ];
@@ -157,16 +154,6 @@ const Projects = () => {
                       >
                         <ExternalLink size={16} className="mr-2" />
                         Live Demo
-                      </a>
-                    </Button>
-                    <Button asChild variant="outline" size="sm">
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Github size={16} className="mr-2" />
-                        Source Code
                       </a>
                     </Button>
                   </div>
